@@ -1,19 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
-const colorTokens = require('./dist/tokens/colors.tailwind.js');
-// const fontSizeTokens = require('./src/tokens/typography.json');
-
-const createTailwindPreset = (tokens) => ({
-  theme: {
-    extend: {
-      colors: {
-        ...tokens.color,
-      },
-    },
-  },
-});
-
-const preset = createTailwindPreset(colorTokens);
+import colorTokens from './dist/tokens/colors.tailwind.js';
+import fontSizeTokens from './dist/tokens/fontSize.tailwind.js';
 
 export default {
   content: ["./src/**/*.{html,js,twig}"],
@@ -22,8 +10,29 @@ export default {
       colors: {
         ...colorTokens,
       },
+      fontSize: {
+        ...fontSizeTokens,
+      },
+      fontFamily: {
+        'sans': ['Merriweather Sans'],
+        'serif': ['Merriweather'],
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.red.1000'),
+            a: {
+              color: theme('colors.link'),
+              // '&:hover': {
+              //   color: '#2c5282',
+              // },
+            },
+          },
+        },
+      })
     },
   },
-  plugins: [],
+  // eslint-disable-next-line no-undef
+  plugins: [require('@tailwindcss/typography'),],
 }
 
