@@ -1,0 +1,31 @@
+<div>
+	<h1>foo</h1>
+	{% for color, value in _context %}
+		<h2 class="sb-title">{{color}}</h2>
+		{% if value.value is defined %}
+			<ul class="sb-list">
+				<li style="bg-{{color}} bg-red-500" class="token-card">
+					<span>
+						{{color}}
+						<span>
+							<code class="sb-custom-property-name">var(--color-{{color}})</code>
+						</span>
+					</span>
+				</li>
+			</ul>
+		{% else %}
+			<ul class="sb-list">
+				{% for nestedColor, nestedValue in value %}
+					<li style="bg-{{color}}-{{nestedColor}}  bg-red-500" class="token-card">
+						<span>
+							{{nestedColor}}
+							<span>
+								<code class="sb-custom-property-name">var(--color-{{color}}-{{nestedColor}})</code>
+							</span>
+						</span>
+					</li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+	{% endfor %}
+</div>

@@ -1,0 +1,132 @@
+{
+  "gold": {
+    "100": {
+      "value": "#fdfaf6",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "200": {
+      "value": "#fcf6ec",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "300": {
+      "value": "#f8ecd7",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "400": {
+      "value": "#f4e2c1",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "500": {
+      "value": "#f1d7a7",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "600": {
+      "value": "#edcc88",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "700": {
+      "value": "#d4b67a",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "800": {
+      "value": "#b89e69",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "900": {
+      "value": "#968156",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "1000": {
+      "value": "#6a5b3d",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    }
+  },
+  "red": {
+    "100": {
+      "value": "#f5f2f2",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "200": {
+      "value": "#ebe4e4",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "300": {
+      "value": "#d5c6c6",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "400": {
+      "value": "#bda3a2",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "500": {
+      "value": "#a27574",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "600": {
+      "value": "#801d19",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "700": {
+      "value": "#721a16",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "800": {
+      "value": "#631613",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "900": {
+      "value": "#511210",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    },
+    "1000": {
+      "value": "#390d0b",
+      "type": "color",
+      "parent": "BNM Colors/Light",
+      "description": ""
+    }
+  },
+  "link": {
+    "value": "#0062a3",
+    "type": "color",
+    "parent": "BNM Colors/Light",
+    "description": ""
+  }
+}
