@@ -12,8 +12,11 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@tokens-studio/sd-transforms": "^0.12.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sd-tailwindcss-transformer": "^1.4.5",
+    "style-dictionary": "^3.9.2"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.4.0",
