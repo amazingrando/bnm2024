@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const colorTokens = require('./src/tokens/colors.json');
+const colorTokens = require('./src-old/tokens/colors.json');
 // const fontSizeTokens = require('./src/tokens/typography.json');
 
 const createTailwindPreset = (tokens) => ({
