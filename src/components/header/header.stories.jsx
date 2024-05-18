@@ -1,6 +1,6 @@
 import parse from 'html-react-parser';
-
 import template from './header.twig';
+import './header';
 
 const component = {
   title: 'Components/Header',

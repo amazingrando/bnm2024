@@ -1,7 +1,10 @@
 /** @type { import('@storybook/react').Preview } */
 import Twig from 'twig';
 import drupalFilters from 'twig-drupal-filters';
+import './_drupal.js';
 import '../src/stylesheets/styles.css';
+import React from 'react';
+import { useEffect } from 'react';
 
 function setupFilters(twig) {
   twig.cache();
@@ -12,6 +15,24 @@ function setupFilters(twig) {
 setupFilters(Twig);
 
 const preview = {
+  decorators: [
+    (Story) => {
+      return (
+        <div
+          style={{
+            padding: '0',
+            height: '100vh',
+          }}
+        >
+          <Story />
+        </div>
+      );
+    },
+    (storyFn) => {
+      useEffect(() => Drupal.attachBehaviors(), []);
+      return storyFn();
+    }
+  ],
   parameters: {
     controls: {
       matchers: {
@@ -19,7 +40,9 @@ const preview = {
         date: /Date$/i,
       },
     },
+    layout: 'fullscreen'
   },
 };
+
 
 export default preview;
