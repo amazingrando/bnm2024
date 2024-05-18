@@ -46,13 +46,13 @@ module.exports = async ({ config }) => {
   config.plugins.push(
     new _StyleLintPlugin({
       configFile: path.resolve(__dirname, '../', '.stylelintrc.json'),
-      context: path.resolve(__dirname, '../', 'components'),
+      context: path.resolve(__dirname, '../', 'src/components'),
       files: '**/*.scss',
       failOnError: false,
       quiet: false,
     }),
     new ESLintPlugin({
-      context: path.resolve(__dirname, '../', 'components'),
+      context: path.resolve(__dirname, '../', 'src/components'),
       extensions: ['js'],
     }),
   );

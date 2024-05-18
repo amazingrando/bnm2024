@@ -15,24 +15,8 @@ const fetchVariantConfig = () => {
   } catch (e) {
     return [
       {
-        name: 'base',
-        directory: 'components/00-base',
-      },
-      {
-        name: 'atoms',
-        directory: 'components/01-atoms',
-      },
-      {
-        name: 'molecules',
-        directory: 'components/02-molecules',
-      },
-      {
-        name: 'organisms',
-        directory: 'components/03-organisms',
-      },
-      {
-        name: 'templates',
-        directory: 'components/04-templates',
+        name: 'components',
+        directory: 'src/components',
       },
     ];
   }
