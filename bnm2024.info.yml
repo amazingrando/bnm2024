@@ -1,15 +1,26 @@
-name: Bits and Mortar 2024
+name: bnm2024
 type: theme
-description: 'Created by Amazing Rando'
-core_version_requirement: '>=10'
+description: Theme using Storybook and component-driven development
 base theme: stable9
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:components (^3.0)
+  - drupal:emulsify_twig (^5.0)
 libraries:
-  - 'bnm2024/global'
+  - bnm2024/global
+ckeditor_stylesheets:
+  - dist/css/style.css
 regions:
-  header: 'Header'
-  content: 'Content'
-  sidebar_first: 'Sidebar first'
-  footer: 'Footer'
+  header: Header
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
+logo: images/logo.png
 components:
   namespaces:
-    components: src/components
+    base: components/00-base
+    atoms: components/01-atoms
+    molecules: components/02-molecules
+    organisms: components/03-organisms
+    templates: components/04-templates
+    pages: components/05-pages

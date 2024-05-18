@@ -1,0 +1,15 @@
+bnm2024.small:
+  label: small
+  mediaQuery: 'all and (min-width: 25em)'
+bnm2024.small-med:
+  label: small-med
+  mediaQuery: 'all and (min-width: 26em)'
+bnm2024.small-large:
+  label: small-large
+  mediaQuery: 'all and (min-width: 41em)'
+bnm2024.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 48em)'
+bnm2024.large:
+  label: large
+  mediaQuery: 'all and (min-width: 61.25em)'
