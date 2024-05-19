@@ -31,19 +31,28 @@ module.exports = async ({ config }) => {
           sourceMap: true,
         },
       },
+      {
+        loader: 'sass-loader',
+        options: {
+          sourceMap: true,
+          sassOptions: {
+            importer: globImporter(),
+          },
+        },
+      },
     ],
   });
 
   config.plugins.push(
     new _StyleLintPlugin({
       configFile: path.resolve(__dirname, '../', '.stylelintrc.json'),
-      context: path.resolve(__dirname, '../', 'src/components'),
-      files: '**/*.css',
+      context: path.resolve(__dirname, '../', 'components'),
+      files: '**/*.scss',
       failOnError: false,
       quiet: false,
     }),
     new ESLintPlugin({
-      context: path.resolve(__dirname, '../', 'src/components'),
+      context: path.resolve(__dirname, '../', 'components'),
       extensions: ['js'],
     }),
   );

@@ -23,7 +23,11 @@ describe('setupTwig', () => {
 
   it('exports emulsifys namespaces', () => {
     expect(namespaces).toEqual({
-      components: '../src/components',
+      base: '../components/00-base',
+      atoms: '../components/01-atoms',
+      molecules: '../components/02-molecules',
+      organisms: '../components/03-organisms',
+      templates: '../components/04-templates',
     });
   });
 });

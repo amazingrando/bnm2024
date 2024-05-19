@@ -1,3 +1,3 @@
 module.exports = {
-  '*.{js,yml,css,md}': ['npm run format'],
+  '*.{js,yml,scss,md}': ['npm run format'],
 };
