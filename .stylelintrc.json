@@ -23,7 +23,8 @@
           "mixin",
           "return",
           "use",
-          "media"
+          "media",
+          "tailwind"
         ]
       }
     ],
@@ -42,7 +43,8 @@
           "include",
           "mixin",
           "return",
-          "use"
+          "use",
+          "tailwind"
         ]
       }
     ],

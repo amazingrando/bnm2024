@@ -30,7 +30,7 @@ const CSSLoader = {
       options: {
         sourceMap: true,
         postcssOptions: {
-          plugins: [['autoprefixer']],
+          plugins: ['tailwindcss', ['autoprefixer']],
         },
       },
     },
