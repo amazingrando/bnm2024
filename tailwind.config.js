@@ -32,6 +32,6 @@ export default {
       }),
     },
   },
-  // eslint-disable-next-line no-undef
-  plugins: [require('@tailwindcss/typography')],
+  // eslint-disable-next-line no-undef, global-require
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
 };
