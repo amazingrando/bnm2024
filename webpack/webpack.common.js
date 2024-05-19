@@ -8,7 +8,7 @@ const rootDir = path.resolve(__dirname, '..');
 const distDir = path.resolve(rootDir, 'dist');
 
 // Glob pattern for scss files that ignore file names prefixed with underscore.
-const scssPattern = path.resolve(rootDir, 'src/components/**/!(_*).scss');
+const scssPattern = path.resolve(rootDir, 'src/components/**/!(_*).css');
 // Glob pattern for JS files.
 const jsPattern = path.resolve(
   rootDir,
@@ -22,7 +22,7 @@ function getEntries(scssPattern, jsPattern) {
   // SCSS entries
   glob.sync(scssPattern).forEach((file) => {
     const filePath = file.split('src/components/')[1];
-    const newfilePath = `css/${filePath.replace('.scss', '')}`;
+    const newfilePath = `css/${filePath.replace('.css', '')}`;
     entries[newfilePath] = file;
   });
 

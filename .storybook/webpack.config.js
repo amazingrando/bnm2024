@@ -31,15 +31,6 @@ module.exports = async ({ config }) => {
           sourceMap: true,
         },
       },
-      {
-        loader: 'sass-loader',
-        options: {
-          sourceMap: true,
-          sassOptions: {
-            importer: globImporter(),
-          },
-        },
-      },
     ],
   });
 
@@ -47,7 +38,7 @@ module.exports = async ({ config }) => {
     new _StyleLintPlugin({
       configFile: path.resolve(__dirname, '../', '.stylelintrc.json'),
       context: path.resolve(__dirname, '../', 'src/components'),
-      files: '**/*.scss',
+      files: '**/*.css',
       failOnError: false,
       quiet: false,
     }),

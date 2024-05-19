@@ -1,11 +1,9 @@
-import parse from 'html-react-parser';
-
 import template from './button.twig';
 import data from './button.yml';
 
 const component = {
   title: 'Components/Button',
-  render: (args) => parse(template(args)),
+  render: (args) => template(args),
   args: { ...data },
 };
 
