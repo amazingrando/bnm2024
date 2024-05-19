@@ -1,4 +1,3 @@
-import { addDecorator } from '@storybook/html';
 import { useEffect } from '@storybook/client-api';
 import Twig from 'twig';
 import { setupTwig } from './setupTwig';
@@ -27,4 +26,5 @@ setupTwig(Twig);
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   layout: 'fullscreen',
+  tags: ['!autodocs'],
 };
