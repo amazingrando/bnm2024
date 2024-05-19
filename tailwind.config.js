@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 
-import colorTokens from './src/tokens/colors.tailwind.js';
-import fontSizeTokens from './src/tokens/fontSize.tailwind.js';
+import colorTokens from './tokens/colors.tailwind';
+import fontSizeTokens from './tokens/fontSize.tailwind';
 
 export default {
-  content: ['./src/**/*.{html,js,twig}'],
+  content: ['./components/**/*.{html,js,twig}'],
   theme: {
     extend: {
       colors: {
