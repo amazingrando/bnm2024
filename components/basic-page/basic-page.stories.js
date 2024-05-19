@@ -1,4 +1,5 @@
 import template from './basic-page.twig';
+import '../header/header';
 
 const component = {
   title: 'Pages/Basic Page',
