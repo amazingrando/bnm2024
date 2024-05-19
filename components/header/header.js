@@ -1,7 +1,22 @@
-console.log('header fired');
-const openMenu = document.getElementById('small-screen-menu');
-console.log('openMenu', openMenu);
+Drupal.behaviors.smallScreenMenu = {
+  attach(context) {
+    const openOverlay = context.getElementById(
+      'small-screen-menu-control-open',
+    );
+    const closeOverlay = context.getElementById(
+      'small-screen-menu-control-close',
+    );
+    const overlay = context.getElementById('small-screen-overlay');
 
-if (openMenu) {
-  openMenu.addEventListener('click', console.log('openMe'));
-}
+    const openOverlayHandler = () => {
+      overlay.classList.remove('hidden');
+    };
+
+    const closeOverlayHandler = () => {
+      overlay.classList.add('hidden');
+    };
+
+    openOverlay.addEventListener('click', openOverlayHandler);
+    closeOverlay.addEventListener('click', closeOverlayHandler);
+  },
+};
