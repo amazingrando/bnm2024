@@ -1,0 +1,10 @@
+tripytych:
+  - heading: "Retailers"
+    icon: "fa-solid fa-store"
+    text: "Plenty of customers out there want the best of both worlds, physical and digital. We empower your store to match print-and-PDF bundle offers and keep the whole transaction in-house."
+  - heading: "Publishers"
+    icon: "fa-solid fa-pen-circle"
+    text: "Make your retail store sales a better value by offering digital copies free with the purchase of the corresponding physical book. You are not restricted by this program – you can still give away or sell ebooks however you like."
+  - heading: "Customers"
+    icon: "fa-solid fa-users"
+    text: "Support your Friendly Local Gaming Store and get your PDF too. Learn more about publisher offers or how to get your local store involved."

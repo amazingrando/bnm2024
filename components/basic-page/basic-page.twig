@@ -1,30 +1,30 @@
 <div class="min-h-screen flex flex-col">
 	{% include "@components/header/header.twig" %}
+	{% block content %}
+		<div class="flex flex-row w-screen">
+			<main class="my-16 px-4 order-2 w-full {{sidebar ? 'lg:ms-8 xl:ms-16' : 'mx-auto'}}">
+				{% block mainContent %}
+					{% include "@components/typography/typography.twig" %}
+				{% endblock mainContent %}
+			</main>
 
-	<div class="flex flex-row w-screen">
-		<main class="my-16 px-4 order-2 w-full {{sidebar ? 'lg:ms-8 xl:ms-16' : 'mx-auto'}}">
-			{% block mainContent %}
-				{% include "@components/typography/typography.twig" %}
-			{% endblock %}
-		</main>
+			<aside class="bg-gold-300 text-gold-1000 order-1 lg:w-[250px] xl:w-[310px] hidden lg:block px-4 py-8 space-y-8 {{sidebar ? 'true' : '!hidden'}}">
+				{% include "@components/nav-user/nav-user.twig" %}
 
-		<aside class="bg-gold-300 text-gold-1000 order-1 lg:w-[250px] xl:w-[310px] hidden lg:block px-4 py-8 space-y-8 {{sidebar ? 'true' : '!hidden'}}">
-			{% include "@components/nav-user/nav-user.twig" %}
+				<div>
+					<h2 class="font-serif text-xl text-red-600">Contact us</h2>
+					<p>Have a question for us?
+						<a href="#" class="text-link underline">We'd love to answer it.<a></p>
+						</div>
 
-			<div>
-				<h2 class="font-serif text-xl text-red-600">Contact us</h2>
-				<p>Have a question for us?
-					<a href="#" class="text-link underline">We'd love to answer it.<a></p>
-					</div>
-
-					<div>
-						<h2 class="font-serif text-xl text-red-600">Donate</h2>
-						<p>If you'd like to show your support for Bits & Mortar by helping us pay some of our site fees,
-							<a href="#" class="text-link underline">here's a link to do just that</a>.</p>
-					</div>
-				</p>
-			</aside>
-		</div>
-
+						<div>
+							<h2 class="font-serif text-xl text-red-600">Donate</h2>
+							<p>If you'd like to show your support for Bits & Mortar by helping us pay some of our site fees,
+								<a href="#" class="text-link underline">here's a link to do just that</a>.</p>
+						</div>
+					</p>
+				</aside>
+			</div>
+		{% endblock content %}
 		{% include "@components/footer/footer.twig" %}
 	</div>
