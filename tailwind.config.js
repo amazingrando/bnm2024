@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 
-import colorTokens from './dist/tokens/colors.tailwind.js';
-import fontSizeTokens from './dist/tokens/fontSize.tailwind.js';
+import colorTokens from './src/tokens/colors.tailwind.js';
+import fontSizeTokens from './src/tokens/fontSize.tailwind.js';
 
 export default {
-  content: ["./src/**/*.{html,js,twig}"],
+  content: ['./src/**/*.{html,js,twig}'],
   theme: {
     extend: {
       colors: {
@@ -14,8 +14,8 @@ export default {
         ...fontSizeTokens,
       },
       fontFamily: {
-        'sans': ['Merriweather Sans'],
-        'serif': ['Merriweather'],
+        sans: ['Merriweather Sans'],
+        serif: ['Merriweather'],
       },
       typography: (theme) => ({
         DEFAULT: {
@@ -29,10 +29,9 @@ export default {
             },
           },
         },
-      })
+      }),
     },
   },
   // eslint-disable-next-line no-undef
-  plugins: [require('@tailwindcss/typography'),],
-}
-
+  plugins: [require('@tailwindcss/typography')],
+};

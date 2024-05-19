@@ -1,7 +1,7 @@
 /** @type { import('@storybook/react').Preview } */
 import Twig from 'twig';
 import drupalFilters from 'twig-drupal-filters';
-import './_drupal.js';
+// import './_drupal.js';
 import '../src/stylesheets/styles.css';
 import React from 'react';
 import { useEffect } from 'react';
@@ -27,10 +27,6 @@ const preview = {
           <Story />
         </div>
       );
-    },
-    (storyFn) => {
-      useEffect(() => Drupal.attachBehaviors(), []);
-      return storyFn();
     }
   ],
   parameters: {
