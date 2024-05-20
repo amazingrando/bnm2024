@@ -7,6 +7,18 @@
     } %}
 		<div class="max-w-3xl mx-auto mt-8">
 			<h1 class="text-red-600 font-serif text-3xl font-bold leading-tight text-balance">Buy the Print Book, Get the PDF. FREE.</h1>
+
+			<div class="mt-8 mb-4">
+				<label class="block text-gold-1000 text-base font-bold mb-2" for="fileCode">
+					Enter your code to redeem your file(s):
+				</label>
+				<div class="flex flex-row gap-2">
+					<input class="appearance-none border border-gold-800 rounded w-full py-2 px-3 text-gold-1000 leading-tight focus:outline-none focus:shadow-outline" id="fileCode" type="text" placeholder="Enter your code...">
+					<button type="submit" class="text-gold-1000 hover:bg-gold-500 bg-gold-600 border border-solid border-gold-800 text-lg py-2 px-4 rounded-sm flex flex-row gap-2 items-center">Redeem
+						<i class="fa-solid fa-caret-right"></i>
+					</button>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -23,5 +35,28 @@
 				</li>
 			{% endfor %}
 		</ul>
+	</section>
+
+	<section class="py-16">
+		<h2 class="text-5xl text-red-600 font-bold font-serif text-center mb-8">221 Publishers Who Support Bits and Mortar</h2>
+		<p class="max-w-3xl mx-auto text-lg text-pretty">Bits and Mortar is a growing alliance of 221 like-minded publishers focused on supporting brick and mortar game stores in our electronic age. Click on a publisher to see their digital offerings.</p>
+
+		<ul class="grid grid-cols-10 max-w-5xl mx-auto mt-8 gap-4">
+			{% for i in 0..200 %}
+				<li class="bg-slate-500 block aspect-square"></li>
+			{% endfor %}
+		</ul>
+	</section>
+
+	<section class="py-16">
+		<div class="max-w-3xl mx-auto space-y-4">
+			<h2 class="text-3xl text-red-600 font-bold font-serif">What is the Bits and Mortar Program?</h2>
+			<p>
+				<strong>We love real, physical brick and mortar game and book stores and we want to see them survive and thrive as digital content options for traditional publishing becomes more prevalent.</strong>
+				We bring the physical and digital worlds together so that you can support your Friendly Local Gaming Store (FLGS) while keeping up-to-date with your digital collection.</p>
+			<p>
+				<a href="#" class="text-link underline">Continue reading to learn more</a>
+			</p>
+		</div>
 	</section>
 {% endblock %}
