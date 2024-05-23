@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
-import colorTokens from './tokens/colors.tailwind';
-import fontSizeTokens from './tokens/fontSize.tailwind';
+import colorTokens from './tokens/tailwind/colors.tailwind';
+import fontSizeTokens from './tokens/tailwind/fontSize.tailwind';
 
 export default {
   content: ['./components/**/*.{html,js,twig}'],
