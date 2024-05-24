@@ -5,8 +5,8 @@ import { create } from '@storybook/theming';
 export default create({
   base: 'light',
   // Branding
-  brandTitle: 'Emulsify',
-  brandUrl: 'https://emulsify.info',
+  brandTitle: 'Bits and Mortar',
+  brandUrl: 'https://bits-and-mortar.com',
   brandImage:
-    '../assets/images/bnm-logo.png',
+    'https://raw.githubusercontent.com/amazingrando/bnm2024/main/assets/images/bnm-logo.png',
 });
